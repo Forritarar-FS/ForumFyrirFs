@@ -1,5 +1,5 @@
 app.factory('emails', ['$http', function($http) {
-  return $http.get('https://s3.amazonaws.com/codecademy-content/courses/ltp4/emails-api/emails.json')
+  return $http.get('js/services/cars.js')
             .success(function(data) {
               return data;
             })
