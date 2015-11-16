@@ -7,8 +7,8 @@ app.config(['$routeProvider', function($routeProvider) {
    templateUrl: 'views/home.html'
  })
  .when('/Home/:id', {
-   controller: 'EmailController',
-   templateUrl: 'views/email.html'
+   controller: 'PostController',
+   templateUrl: 'views/post.html'
  })
  .otherwise({
    redirectTo: '/Home'
