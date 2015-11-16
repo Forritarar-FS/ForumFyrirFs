@@ -3,7 +3,7 @@ var app = angular.module('HomeApp', ['ngRoute']);
 app.config(['$routeProvider', function($routeProvider) {
  $routeProvider
  .when('/Home', {
-   controller: 'HomeController',
+   controller: 'TopicController',
    templateUrl: 'views/home.html'
  })
  .when('/Home/:id', {

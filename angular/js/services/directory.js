@@ -1,5 +1,5 @@
-app.factory('emails', ['$http', function($http) {
-  return $http.get('js/services/cars.html')
+app.factory('directory', ['$http', function($http) {
+  return $http.get('js/services/topics.html')
             .success(function(data) {
               return data;
             })

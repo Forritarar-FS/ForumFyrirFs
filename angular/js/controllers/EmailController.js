@@ -1,5 +1,5 @@
-app.controller('EmailController', ['$scope', 'emails', '$routeParams', function($scope, emails, $routeParams) {
-  emails.success(function(data) {
+app.controller('EmailController', ['$scope', 'directory', '$routeParams', function($scope, directory, $routeParams) {
+  directory.success(function(data) {
     $scope.email = data[$routeParams.id];
   });
 }]);
