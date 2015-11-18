@@ -179,6 +179,10 @@ body {
 	margin-top: 60px;
 }
 
+.registeresetpassw{
+  text-align: center;
+}
+
 form[role=Login] {
 	color: #5d5d5d;
 	background: #f2f2f2;
