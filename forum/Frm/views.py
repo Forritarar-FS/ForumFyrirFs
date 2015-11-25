@@ -5,8 +5,36 @@ from django.views import generic
 from .models import Comment, Post
 from django.utils import timezone
 from .tests import TestCase
+from django.contrib.auth.models import User
+from django.contrib.auth import authenticate, login
 
 
+class IndexView(generic.ListView):
+    template_name = 'Frm/index.html'
+    context_object_name = 'latest_post_list'
+
+    def get_queryset(self):
+        """
+        Return the last five published posts (not including those set to be
+        published in the future).
+        """
+        return Post.objects.filter(
+            pub_date__lte=timezone.now()
+        ).order_by('-pub_date')[:5]
+
+
+class DetailView(generic.DetailView):
+    model = Post
+    template_name = 'Frm/detail.html'
+    def get_queryset(self):
+        """
+        Excludes any posts that aren't published yet.
+        """
+        return Post.objects.filter(pub_date__lte=timezone.now())
+
+class ResultsView(generic.DetailView):
+    model = Post
+    template_name = 'Frm/results.html'
 
 class IndexView(generic.ListView):
     template_name = 'Frm/index.html'
@@ -40,6 +68,27 @@ def index(request):
     context = {'latest_post_list': latest_post_list}
     return render(request, 'frm/index.html', context)
 
+def register(request):
+    user_name = request.GET['username']
+    emailReg = request.GET['email']
+    password = request.GET['password']
+    u = User.objects.create_user(user_name, emailReg, password)
+    u.save()
+    return HttpResponseRedirect("http://localhost/angular/#/Login")
+
+def login(request):
+    user_name = request.GET['username']
+    password = request.GET['password']
+    user = authenticate(username=user_name, password=password)
+    if user is not None:
+        # the password verified for the user
+        if user.is_active:
+            return HttpResponseRedirect("http://localhost/angular/#/UCP")
+        else:
+            return HttpResponse("The password is valid, but the account has been disabled!")
+    else:
+        # the authentication system was unable to verify the username and password
+        return HttpResponse("The username and password were incorrect.")
 
 def detail(request, post_id):
     post = get_object_or_404(Post, pk=post_id)
