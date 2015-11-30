@@ -1,12 +1,4 @@
-<<<<<<< HEAD
-body, html {
-    background: #f9f9f9;
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-}
-=======
 
->>>>>>> 60bafdeaa84601825b49a2d36a5bca66ebc74e40
 
 .header {
     background: #aa08ff;
@@ -34,10 +26,6 @@ body, html {
 }
 
 .post {
-<<<<<<< HEAD
-    background: #fff;
-=======
->>>>>>> 60bafdeaa84601825b49a2d36a5bca66ebc74e40
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     font-size: 18px;
     margin: 0 0 8px;
@@ -66,13 +54,9 @@ a.back {
     display: block;
     font-weight: bold;
     margin: 0 0 20px;
-<<<<<<< HEAD
-    padding: 14px 0;
-=======
     padding: 12px 0;
     margin-top: 20px;
     margin-left: 200px;
->>>>>>> 60bafdeaa84601825b49a2d36a5bca66ebc74e40
     text-align: center;
     width: 200px;
 }
@@ -102,10 +86,6 @@ a.back:hover {
 }
 
 .post-view {
-<<<<<<< HEAD
-    background: #fff;
-=======
->>>>>>> 60bafdeaa84601825b49a2d36a5bca66ebc74e40
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     padding: 50px;
 }
@@ -134,8 +114,6 @@ a.back:hover {
     margin: 30px 0 0;
 }
 
-<<<<<<< HEAD
-=======
 .post-comment {
     background: #fff;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -167,7 +145,6 @@ a.back:hover {
 }
 
 
->>>>>>> 60bafdeaa84601825b49a2d36a5bca66ebc74e40
 .footer {
   background:#000;
   padding:60px 0;
@@ -185,11 +162,8 @@ a.back:hover {
   padding-left:0px;
 }
 
-<<<<<<< HEAD
-=======
 
 
->>>>>>> 60bafdeaa84601825b49a2d36a5bca66ebc74e40
 @CHARSET "UTF-8";
 /*
 over-ride "Weak" message, show font in dark grey
@@ -233,13 +207,6 @@ body {
 .Login-form {
 	margin-top: 60px;
 }
-<<<<<<< HEAD
-
-.registeresetpassw{
-  text-align: center;
-}
-
-=======
 .Post-form {
 	margin-top: 40px;
   margin-left:-200px;
@@ -248,7 +215,6 @@ body {
 .registeresetpassw{
   text-align: center;
 }
->>>>>>> 60bafdeaa84601825b49a2d36a5bca66ebc74e40
 form[role=Login] {
 	color: #5d5d5d;
 	background: #f2f2f2;
@@ -273,12 +239,6 @@ form[role=Login] {
 .Loginlogo{
   text-align: center;
 }
-<<<<<<< HEAD
-.register-form {
-	margin-top: 60px;
-}
-=======
->>>>>>> 60bafdeaa84601825b49a2d36a5bca66ebc74e40
 
 form[role=register] {
 	color: #5d5d5d;
@@ -309,11 +269,6 @@ form[role=register] {
 	margin-top: 1em;
 	margin-bottom: 50px;
 }
-<<<<<<< HEAD
-	.form-links a {
-		color: #fff;
-=======
 	a {
 		color: #000;
->>>>>>> 60bafdeaa84601825b49a2d36a5bca66ebc74e40
 	}

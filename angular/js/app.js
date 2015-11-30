@@ -15,23 +15,6 @@ app.config(['$routeProvider', function($routeProvider) {
    templateUrl: 'views/post.html'
  })
  .when('/Login', {
-<<<<<<< HEAD
-   controller: 'LoginController',
-   templateUrl: 'views/Login.html'
- })
- .when('/outbox/:id', {
-   controller: 'EmailController',
-   templateUrl: 'views/email.html'
- })
- .when('/register', {
-   controller: 'EmailController',
-   templateUrl: 'views/register.html'
- })
- .when('/resetpassword', {
-   controller: 'EmailController',
-   templateUrl: 'views/resetpassword.html'
- })
-=======
   controller: 'LoginController',
   templateUrl: 'views/Login.html'
 })
@@ -47,7 +30,6 @@ app.config(['$routeProvider', function($routeProvider) {
   controller: 'EmailController',
   templateUrl: 'views/ucp.html'
 })
->>>>>>> 60bafdeaa84601825b49a2d36a5bca66ebc74e40
  .otherwise({
    redirectTo: '/Home'
  });
