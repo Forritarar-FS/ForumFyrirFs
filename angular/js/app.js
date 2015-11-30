@@ -2,11 +2,7 @@ var app = angular.module('HomeApp', ['ngRoute']);
 
 app.config(['$routeProvider', function($routeProvider) {
  $routeProvider
-<<<<<<< HEAD
-.when('/Home', {
-=======
  .when('/Home', {
->>>>>>> 60bafdeaa84601825b49a2d36a5bca66ebc74e40
    controller: 'TopicController',
    templateUrl: 'views/home.html'
  })
